@@ -1,8 +1,8 @@
 #!/bin/bash
 # Parallel fMRI Preprocessing using SLURM Job Scheduler
-% Author: Deniz Lal Ersoy
-% Email: ersoydenizlal@gmail.com
-% Date: 2023-06-23
+# Author: Deniz Lal Ersoy
+# Email: ersoydenizlal@gmail.com
+# Date: 2023-06-23
 #
 # Description:
 # This script submits separate SLURM jobs for each subject in the dataset.
