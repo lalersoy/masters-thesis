@@ -13,7 +13,6 @@
 % - The Decoding Toolbox (TDT) - https://sites.google.com/site/tdtdecodingtoolbox/
 %
 % Reference:
-% Please cite: 
 % Hebart, M. N., Görgen, K., & Haynes, J. D. (2015). 
 % The Decoding Toolbox (TDT): A versatile software package for multivariate analyses of functional imaging data. 
 % Frontiers in Neuroinformatics, 8, 88. https://doi.org/10.3389/fninf.2014.00088
