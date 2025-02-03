@@ -48,7 +48,7 @@ function GLM_mvpa(subj_id, ses_id, chopstick_groups, hand_groups, onsetrest, dur
     ses_dir = fullfile(subj_dir, ses_id, '/');
 
     % Create GLM results directory
-    glm_dir = fullfile(ses_dir, 'glm_roi_residuals/');
+    glm_dir = fullfile(ses_dir, 'glm_roi/');
     if ~exist(glm_dir, 'dir')
         mkdir(glm_dir);
     end
@@ -259,7 +259,7 @@ function GLM_mvpa(subj_id, ses_id, chopstick_groups, hand_groups, onsetrest, dur
 
 
     %% Save GLM batch 
-    filename = strcat(glm_dir,'sub-',subj_id,'_',ses_id,'_glm_roi_residuals.mat');
+    filename = strcat(glm_dir,'sub-',subj_id,'_',ses_id,'_glm_roi.mat');
     save(filename, 'matlabbatch');
 
     % % run batch 
