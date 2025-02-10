@@ -23,8 +23,8 @@ function preprocessing_chopstick(subj_id)
     addpath('/home/mpib/ersoy/matlab/tools/spm12/')
 
     % Define directories
-    data_dir='/home/mpib/ersoy/derivatives/spm_chopstick/';
-    spm_dir='/home/mpib/ersoy/matlab/tools/spm12/';
+    data_dir='/path/to/derivatives/fmri_data/';
+    spm_dir='/path/to/spm12/';
     subj_dir=strcat(data_dir,'sub-',subj_id,'/');
     ses_list=dir(fullfile(subj_dir,'ses*'));  %List session folders 
     session_names = string(regexp({ses_list.name}, 'ses-\d+', 'match')); %Extract session names
