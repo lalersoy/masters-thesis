@@ -16,7 +16,7 @@ masters-thesis
 │   │   ├── event_extraction.m   # Loads event timing from subject TSV files, extracts motion regressors, computes framewise displacement 
 │   ├── mvpa/              # MVPA & SVM classification scripts
 │   │   ├── crossvalidation.m   # Performs searchlight-based decoding analysis using TDT 
-│   │   ├── differenceimage.m # Extracts event-related information from .txt files and converts it into a BIDS-compatible .tsv format
+│   │   ├── differenceimage.m # 
 │   ├── log_processing/        # Scripts for transforming log files into usable formats
 │   │   ├── chopstick_onsettimes.pl   # Extracts onset times and conditions from log files generated during the motor task 
 │   │   ├── txt_to_tsv.sh   # Extracts event-related information from .txt files and converts it into a BIDS-compatible .tsv format 
