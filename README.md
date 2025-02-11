@@ -19,7 +19,7 @@ masters-thesis
 │   │   ├── event_extraction.m   # Loads event timing from subject TSV files, extracts motion regressors, computes framewise displacement 
 │   ├── mvpa/              # MVPA & SVM classification scripts
 │   │   ├── crossvalidation.m   # Performs searchlight-based decoding analysis using TDT 
-│   │   ├── differenceimage.m # Extracts event-related information from .txt files and converts it into a BIDS-compatible .tsv format
+│   │   ├── differenceimage.m # 
 │   ├── log_processing/        # Scripts for transforming log files into usable formats
 │   │   ├── chopstick_onsettimes.pl   # Extracts onset times and conditions from log files generated during the motor task 
 │   │   ├── txt_to_tsv.sh   # Extracts event-related information from .txt files and converts it into a BIDS-compatible .tsv format 
@@ -78,7 +78,7 @@ sbatch code/parallel_processing/decoding_job.sh
 - **imcalc:** https://www.nitrc.org/projects/imcalc/
 
 ##  Acknowledgments
-I am profoundly grateful to Prof. Simone Kuehn, my primary supervisor, for welcoming me as an intern and providing invaluable guidance throughout my Master’s thesis. Her expertise and support have been fundamental to my academic development and the completion of this thesis. I would also like to express my gratitude to Prof. Felix Blankenburg for his co-supervision and interest in my work.
+I am profoundly grateful to Prof. Simone Kuehn, my primary supervisor, for welcoming me as an intern and providing invaluable guidance throughout my Master’s thesis. I would also like to express my gratitude to Prof. Felix Blankenburg for his co-supervision and interest in my work.
 I owe special thanks to Maike Hille for helping me navigate the trickier parts of the researchand made everything seem manageable. This Master’s thesis is part of a bigger Staebchen project that she had designed and lead, and I am deeply grateful to her for that. 
 
 
