@@ -9,9 +9,17 @@ This repository contains scripts and data processing workflows for my thesis on 
 masters-thesis
 ├── code/
 │   ├── preprocessing/         # fMRI preprocessing scripts (MATLAB, Bash)
+│   │   ├── preprocessing_chopstick.m   # Performs preprocessing of fMRI data using SPM12
+│   │   ├── run_chopstick_preproc.m            # Runs the preprocessing function for each subject
 │   ├── glm/                   # General Linear Model (GLM) specification & estimation
+│   │   ├── GLM_mvpa.m   # Sets up and runs GLM using SPM12
+│   │   ├── event_extraction.m   # Loads event timing from subject TSV files, extracts motion regressors, computes framewise displacement 
 │   ├── mvpa/              # MVPA & SVM classification scripts
+│   │   ├── crossvalidation.m   # Performs searchlight-based decoding analysis using TDT 
+│   │   ├── differenceimage.m # Extracts event-related information from .txt files and converts it into a BIDS-compatible .tsv format
 │   ├── log_processing/        # Scripts for transforming log files into usable formats
+│   │   ├── chopstick_onsettimes.pl   # Extracts onset times and conditions from log files generated during the motor task 
+│   │   ├── txt_to_tsv.sh   # Extracts event-related information from .txt files and converts it into a BIDS-compatible .tsv format 
 │   ├── parallel_processing/   # SLURM-based batch job submission scripts
 │   │   ├── preprocessing_job.sh   # Parallel processing for preprocessing
 │   │   ├── glm_slurm_job.sh             # Parallel processing for GLM
