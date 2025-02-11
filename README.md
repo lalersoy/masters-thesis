@@ -1,29 +1,27 @@
-# masters-thesis
-Master's Thesis 
-# 📖 Thesis: A Longitudinal fMRI Study of Chopstick Skill Acquisiton 
 
-## 🔍 Overview
+# Thesis: A Longitudinal fMRI Study of Chopstick Skill Acquisiton 
+
+##  Overview
 This repository contains scripts and data processing workflows for my thesis on **Multivariate Pattern Analysis (MVPA) in Longitudinal fMRI Data using Support Vector Machines (SVM)**. The project involves preprocessing, statistical modeling (GLM), and machine learning-based classification using **The Decoding Toolbox (TDT)**.
 
-## 📂 Repository Structure
+## Repository Structure
 ```bash
-📦 thesis-mvpa-fmri
+masters-thesis
 ├── code/
 │   ├── preprocessing/         # fMRI preprocessing scripts (MATLAB, Bash)
 │   ├── glm/                   # General Linear Model (GLM) specification & estimation
 │   ├── mvpa/              # MVPA & SVM classification scripts
 │   ├── log_processing/        # Scripts for transforming log files into usable formats
 │   ├── parallel_processing/   # SLURM-based batch job submission scripts
-│   │   ├── preprocessing_jobs.sh   # Parallel processing for preprocessing
-│   │   ├── glm_jobs.sh             # Parallel processing for GLM
-│   │   ├── decoding_jobs.sh        # Parallel processing for MVPA
-├── README.md                  # This file
-├── LICENSE                    # License file (MIT/GPL/etc.)
+│   │   ├── preprocessing_job.sh   # Parallel processing for preprocessing
+│   │   ├── glm_slurm_job.sh             # Parallel processing for GLM
+│   │   ├── decoding_job.sh        # Parallel processing for MVPA
+├── README.md                 
 ```
 
-## 🚀 Usage
+## Usage
 ### **1. Preprocessing**
-Run **preprocessing_chopstick.m** to preprocess fMRI data:
+Run **run_chopstick_preproc.m** to preprocess fMRI data:
 ```matlab
 preprocessing_chopstick('XXXXX')
 ```
@@ -33,14 +31,14 @@ sbatch code/parallel_processing/preprocessing_job.sh
 ```
 
 ### **2. General Linear Model (GLM)**
-Run the GLM specification and estimation:
+Extract events from TSV files and prepare for GLM and run the GLM specification and estimation using **event_extraction.m**, where ses stands for session number:
 ```matlab
 GLM_mvpa('XXXXX', 'ses-XX')
 ```
 Or run parallel processing for GLM:
 ```bash
 sbatch code/parallel_processing/glm_slurm_job.sh
-```
+
 
 ### **3. MVPA with Support Vector Machines**
 Execute searchlight-based MVPA analysis:
