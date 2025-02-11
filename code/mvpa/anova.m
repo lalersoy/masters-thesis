@@ -24,7 +24,7 @@ function anova(experimental_group)
 
 % Define base directories 
 data_dir = '/path/to/derivatives/fmri_data/';
-results_dir = fullfile(data_dir, 'thesis_results/multivariate/anova_server/');
+results_dir = fullfile(data_dir, 'path/to/results/anova/');
 
 % Initialize SPM batch
 matlabbatch{1}.spm.stats.factorial_design.dir = {results_dir};

@@ -8,13 +8,8 @@
 % - SPM12
 % - anova.m function
 %
-% Usage:
-% Simply run the script:
-% ```matlab
-% run_anova
-% ```
-%
 % Author: Deniz Lal Ersoy
+% Email: ersoydenizlal@gmail.com
 % Date: 2024-05-12
 
 %% ---- Set up Paths ----
