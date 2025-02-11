@@ -19,14 +19,15 @@ masters-thesis
 │   │   ├── event_extraction.m   # Loads event timing from subject TSV files, extracts motion regressors, computes framewise displacement 
 │   ├── mvpa/              # MVPA & SVM classification scripts
 │   │   ├── crossvalidation.m   # Performs searchlight-based decoding analysis using TDT 
-│   │   ├── differenceimage.m # 
+│   │   ├── anova.m # Performs a repeated measures ANOVA that tests for linear and quadratic change of decoding accuracy across time 
+│   │   ├── run_anova.m # Extracts the IDs of subjects who have data for sessions 1, 3 & 7 and runs the anova.m
 │   ├── log_processing/        # Scripts for transforming log files into usable formats
 │   │   ├── chopstick_onsettimes.pl   # Extracts onset times and conditions from log files generated during the motor task 
 │   │   ├── txt_to_tsv.sh   # Extracts event-related information from .txt files and converts it into a BIDS-compatible .tsv format 
 │   ├── parallel_processing/   # SLURM-based batch job submission scripts
 │   │   ├── preprocessing_job.sh   # Parallel processing for preprocessing
 │   │   ├── glm_slurm_job.sh             # Parallel processing for GLM
-│   │   ├── decoding_job.sh        # Parallel processing for MVPA
+│   │   ├── crossvalidation_job.sh        # Parallel processing for MVPA
 ├── README.md                 
 ```
 
@@ -69,8 +70,15 @@ crossvalidation('XXXXX', 'ses-XX')
 ```
 Or run parallel processing for decoding:
 ```bash
-sbatch code/parallel_processing/decoding_job.sh
+sbatch code/parallel_processing/crossvalidation_job.sh
 ```
+
+### **5. Repeated Measures ANOVA**
+Execute ANOVA to test for linear and quadratic changes in decoding accuracy across 3 time points using **run_anova.m**:
+```matlab
+anova({'XXXXX', 'XXXXX',....}) # Subject IDs
+```
+
 
 ##  References
 - **SPM12:** https://www.fil.ion.ucl.ac.uk/spm/software/spm12/
