@@ -15,8 +15,8 @@
 # - SPM12 standalone
 
 # Define paths
-DATA_DIR="$HOME/path/to/derivatives/fmri_data"
-SPM="$HOME/path/to/matlab/tools/spm12/run_spm12.sh"
+DATA_DIR="$HOME/derivatives/spm_chopstick"
+SPM="$HOME/matlab/tools/standalone_v7771_R2022b/run_spm12.sh"
 MATLAB_RUNTIME="/opt/matlab/R2022b"
 
 # Navigate to data directory

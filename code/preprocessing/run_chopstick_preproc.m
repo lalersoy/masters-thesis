@@ -8,7 +8,7 @@
 % runs the preprocessing function (`preprocessing_chopstick`) for each subject.
 
 % Define root directory containing subjects
-data_dir = '/home/mpib/ersoy/derivatives/spm_chopstick/';
+data_dir = '$HOME/path/to/derivatives/fmri_data';
 
 % Get list of subject folders
 sub_list = dir(fullfile(data_dir, 'sub-*')); 
