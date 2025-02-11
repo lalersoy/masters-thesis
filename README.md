@@ -2,7 +2,7 @@
 # Thesis: A Longitudinal fMRI Study of Chopstick Skill Acquisiton 
 
 ##  Overview
-This repository contains scripts and data processing workflows for my thesis on **Multivariate Pattern Analysis (MVPA) in Longitudinal fMRI Data using Support Vector Machines (SVM)**. The project involves preprocessing, statistical modeling (GLM), and machine learning-based classification using **The Decoding Toolbox (TDT)**.
+This repository contains scripts and data processing workflows for my thesis on functional reorganization in the brain across a 10-week period of motor skill learning. The project involves preprocessing, statistical modeling (GLM), and machine learning-based classification using **The Decoding Toolbox (TDT)**.
 
 ## Repository Structure
 ```bash
