@@ -38,6 +38,7 @@ GLM_mvpa('XXXXX', 'ses-XX')
 Or run parallel processing for GLM:
 ```bash
 sbatch code/parallel_processing/glm_slurm_job.sh
+```
 
 
 ### **3. MVPA with Support Vector Machines**
