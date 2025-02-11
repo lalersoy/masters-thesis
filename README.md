@@ -19,7 +19,7 @@ masters-thesis
 │   │   ├── event_extraction.m   # Loads event timing from subject TSV files, extracts motion regressors, computes framewise displacement 
 │   ├── mvpa/             
 │   │   ├── crossvalidation.m   # Performs searchlight-based decoding analysis using TDT 
-│   │   ├── anova.m # Performs a repeated measures ANOVA that tests for linear and quadratic change of decoding accuracy across time 
+│   │   ├── anova.m # Performs a repeated measures ANOVA with factor Time
 │   │   ├── run_anova.m 
 │   ├── log_processing/        # Scripts for transforming log files into usable formats
 │   │   ├── chopstick_onsettimes.pl   
