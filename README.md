@@ -86,7 +86,7 @@ anova({'XXXXX', 'XXXXX',....}) # Subject IDs
 - **imcalc:** https://www.nitrc.org/projects/imcalc/
 
 ##  Acknowledgments
-I am profoundly grateful to Prof. Simone Kuehn, my primary supervisor, for welcoming me as an intern and providing invaluable guidance throughout my Master’s thesis. I would also like to express my gratitude to Prof. Felix Blankenburg for his co-supervision and interest in my work.
+I am profoundly grateful to Prof. Simone Kühn, my primary supervisor, for welcoming me as an intern and providing invaluable guidance throughout my Master’s thesis. I would also like to express my gratitude to Prof. Felix Blankenburg for his co-supervision and interest in my work.
 I owe special thanks to Maike Hille for helping me navigate the trickier parts of the researchand made everything seem manageable. This Master’s thesis is part of a bigger Staebchen project that she had designed and lead, and I am deeply grateful to her for that. 
 
 
