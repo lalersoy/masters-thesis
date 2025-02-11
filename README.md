@@ -11,23 +11,23 @@ Despite significant evidence supporting the existence of internal models for too
 ```bash
 masters-thesis
 ├── code/
-│   ├── preprocessing/         # fMRI preprocessing scripts (MATLAB, Bash)
+│   ├── preprocessing/         
 │   │   ├── preprocessing_chopstick.m   # Performs preprocessing of fMRI data using SPM12
-│   │   ├── run_chopstick_preproc.m            # Runs the preprocessing function for each subject
-│   ├── glm/                   # General Linear Model (GLM) specification & estimation
+│   │   ├── run_chopstick_preproc.m           
+│   ├── glm/                  
 │   │   ├── GLM_mvpa.m   # Sets up and runs GLM using SPM12
 │   │   ├── event_extraction.m   # Loads event timing from subject TSV files, extracts motion regressors, computes framewise displacement 
-│   ├── mvpa/              # MVPA & SVM classification scripts
+│   ├── mvpa/             
 │   │   ├── crossvalidation.m   # Performs searchlight-based decoding analysis using TDT 
 │   │   ├── anova.m # Performs a repeated measures ANOVA that tests for linear and quadratic change of decoding accuracy across time 
-│   │   ├── run_anova.m # Extracts the IDs of subjects who have data for sessions 1, 3 & 7 and runs the anova.m
+│   │   ├── run_anova.m 
 │   ├── log_processing/        # Scripts for transforming log files into usable formats
-│   │   ├── chopstick_onsettimes.pl   # Extracts onset times and conditions from log files generated during the motor task 
-│   │   ├── txt_to_tsv.sh   # Extracts event-related information from .txt files and converts it into a BIDS-compatible .tsv format 
+│   │   ├── chopstick_onsettimes.pl   
+│   │   ├── txt_to_tsv.sh  
 │   ├── parallel_processing/   # SLURM-based batch job submission scripts
-│   │   ├── preprocessing_job.sh   # Parallel processing for preprocessing
-│   │   ├── glm_slurm_job.sh             # Parallel processing for GLM
-│   │   ├── crossvalidation_job.sh        # Parallel processing for MVPA
+│   │   ├── preprocessing_job.sh   
+│   │   ├── glm_slurm_job.sh             
+│   │   ├── crossvalidation_job.sh       
 ├── README.md                 
 ```
 
