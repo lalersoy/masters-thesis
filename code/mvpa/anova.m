@@ -17,10 +17,10 @@
 % - SPM12
 %
 % Usage:
-%   anova({'XXXXX', 'XXXXX', 'XXXXX'})
+%   anova({'XXXXX', 'XXXXX', 'XXXXX'}) # Subject IDs
 %
 
-function anova_server(experimental_group)
+function anova(experimental_group)
 
 % Define base directories 
 data_dir = '/path/to/derivatives/fmri_data/';
