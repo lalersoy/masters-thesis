@@ -20,7 +20,17 @@ masters-thesis
 ```
 
 ## Usage
-### **1. Preprocessing**
+### **1. TSV Creation**
+Convert log files into text format using Perl:
+```bash
+perl code/log_processing/chopstick_onsettimes.pl logfile
+```
+Convert text files into TSV format using Bash:
+```bash
+bash code/log_processing/txt_to_tsv.sh
+```
+
+### **2. Preprocessing**
 Run **run_chopstick_preproc.m** to preprocess fMRI data:
 ```matlab
 preprocessing_chopstick('XXXXX')
@@ -30,7 +40,7 @@ Alternatively, submit a batch job for parallel preprocessing:
 sbatch code/parallel_processing/preprocessing_job.sh
 ```
 
-### **2. General Linear Model (GLM)**
+### **3. General Linear Model (GLM)**
 Extract events from TSV files and prepare for GLM and run the GLM specification and estimation using **event_extraction.m**, where ses stands for session number:
 ```matlab
 GLM_mvpa('XXXXX', 'ses-XX')
@@ -41,7 +51,7 @@ sbatch code/parallel_processing/glm_slurm_job.sh
 ```
 
 
-### **3. MVPA with Support Vector Machines**
+### **4. MVPA with Support Vector Machines**
 Execute searchlight-based MVPA analysis:
 ```matlab
 crossvalidation('XXXXX', 'ses-XX')
