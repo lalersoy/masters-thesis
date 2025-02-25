@@ -27,7 +27,13 @@ masters-thesis
 │   ├── parallel_processing/   # SLURM-based batch job submission scripts
 │   │   ├── preprocessing_job.sh   
 │   │   ├── glm_slurm_job.sh             
-│   │   ├── crossvalidation_job.sh       
+│   │   ├── crossvalidation_job.sh      
+│   ├── behavioral_analysis/  
+│   │   ├── betweengroup_analysis.R # Group-level comparison between control and experimental groups 
+│   │   ├── withinsubject_analysis.R  # Mixed-effects models for within-subject longitudinal analysis
+│   ├── visualizations/  # Behavioral plots (LaTeX)
+│   │   ├── betweengroup_behavioral.png 
+│   │   ├── withingsubject_behavioral.png  
 ├── README.md                 
 ```
 
@@ -79,6 +85,15 @@ Execute ANOVA to test for linear and quadratic changes in decoding accuracy acro
 anova({'XXXXX', 'XXXXX',....}) # Subject IDs
 ```
 
+### **6. Behavioral Analysis**
+Run within-subject behavioral analysis:
+```r
+Rscript behavioral_analysis/within_subject_analysis.R
+```
+Run between-subject group comparison:
+```r
+Rscript behavioral_analysis/between_subject_analysis.R
+```
 
 ##  References
 - **SPM12:** https://www.fil.ion.ucl.ac.uk/spm/software/spm12/
